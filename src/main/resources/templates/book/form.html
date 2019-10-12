@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/addTodo}" th:object="${todo}" method="post">
+    <p>Title: <input type="text" th:field="*{title}" /></p>
+    <p>Author: <input type="text" th:field="*{title}" /></p>
+    <p>Publisher: <input type="text" th:field="*{title}" /></p>
+    <p>Genre: <input type="text" th:field="*{detail}" /></p>
+    <p><button type="submit" class="btn btn-success">Add</button></p>
+</form>
+</body>
+</html>
